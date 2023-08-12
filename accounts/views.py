@@ -17,7 +17,7 @@ def user_login(request):
             )
             if user is not None:
                 login(request, user)
-                return redirect("project_list")
+                return redirect("list_projects")
     else:
         form = LoginForm()
     context = {
